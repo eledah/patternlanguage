@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Sahel;
+}
+
+:root {
+  --main-bg-color: rgb(255, 220, 154);
+  --text-color: rgb(25, 46, 39);
+  --bold-text-color: rgb(227, 75, 64);
+}
+
+
+html {
+  color: var(--text-color);
+}
+
+blockquote {
+  padding-top: 5px;
+}
+
+
+/* Define the default styles for h3, h4, and h5 */
+h1, h3, h4, h5 {
+  color: var(--tw-prose-headings); /* Default heading color */
+  transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+
+/* Define the hover state for h3, h4, and h5 */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+  color: var(--bold-text-color); /* New heading color on hover */
+}
+
+
+p>img {
+  border-radius: 10px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  margin: auto;
+}
+
+a, strong {
+  color: var(--text-color); /* Default link color */
+  text-decoration: none; /* Remove underlines, if needed */
+  transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+/* Define the hover state */
+a:hover , strong:hover {
+  color: var(--bold-text-color); /* New link color on hover */
+}
+
+.english-blockquote {
+  direction: ltr;
+
+  border-left: 2px solid gray !important;
+  border-right: none !important;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  color: gray;   
+}
+
+.english-blockquote::before {
+  content: none;
+}
+
+blockquote .english-footer {
+  margin-top: 1em;
+  color: gray;
+  font-size: 10pt;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+blockquote footer:before {
+  content: '— ';
+}
+
+.farsi-blockquote {
+  direction: rtl;
+  padding-right: 20px;
+  border-right: 2px solid gray !important;
+  border-left: unset;
+  font-family: Sahel;
+  font-size: 16px;
+  /* font-style: italic; */
+  color: gray;
+  /* color: gray; */
+}
+
+.farsi-blockquote::before {
+  content:unset;
+}
+
+blockquote .farsi-footer {
+  margin-top: 1em;
+  color: gray;
+  font-size: 10pt;
+  text-align: right;
+  font-family: Sahel;
+  font-style: normal;
+  color: gray;
+}
+
+blockquote footer:before {
+  content: '— ';
+}
+
+blockquote::before {
+  content: none !important;
+}
+
+.prose-lg :where(ol):not(:where([class~="not-prose"] *)), .prose-lg :where(ul):not(:where([class~="not-prose"] *)) {
+  padding-left: 0px;
+  padding-right: 1em;
+}
