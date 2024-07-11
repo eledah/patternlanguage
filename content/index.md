@@ -1,6 +1,9 @@
 ---
-title: Welcome to Quartz
+title: زبان الگو
 ---
+این سایت ترجمه‌ای فارسی از کتاب «زبان الگو» اثر کریستوفر الکساندر است.
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+
+برای ایجاد حکومتی جهانی با هزاران ناحیهٔ مستقل به جای کشورها از هیچ اقدامی دریغ ننمایید.
+
+[[۱. نواحی مستقل]]
