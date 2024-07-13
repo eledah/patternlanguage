@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "زبان الگو",
+    pageTitle: "یک زبان الگو",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
